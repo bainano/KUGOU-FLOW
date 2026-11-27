@@ -11,10 +11,14 @@
 | `docs/` | AI 知识库：接口索引、原始文档、后端指南 |
 | `.gitignore` | 忽略依赖、构建产物与密钥 |
 
+## 远程仓库
+
+https://github.com/bainano/KUGOU-FLOW
+
 ## 当前状态
 
 - [x] 项目本地 git 化
 - [x] 后端源码下载
 - [x] 文档本地知识库化
-- [ ] GitHub 远程仓库
+- [x] GitHub 远程仓库与代码推送
 - [ ] 桌面端框架选型与编码
