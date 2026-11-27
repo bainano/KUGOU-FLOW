@@ -40,3 +40,6 @@ pnpm-debug.log*
 tmp/
 temp/
 *.tmp
+
+# WorkBuddy 内部工作日志（不上传）
+.workbuddy/
