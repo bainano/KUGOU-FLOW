@@ -1,0 +1,42 @@
+# 依赖
+node_modules/
+.pnp/
+.pnp.js
+
+# Rust / Tauri 构建产物
+target/
+gen/
+dist/
+
+# 打包输出
+build/
+out/
+*.exe
+*.msi
+*.dmg
+*.app
+
+# 环境变量与密钥
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*_rsa
+*_rsa.pub
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# 临时文件
+tmp/
+temp/
+*.tmp
