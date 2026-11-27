@@ -42,13 +42,13 @@
 - 后端指南：`docs/backend-guide.md`
 
 ### GitHub 远程仓库
-- 连接方案：**OAuth Device Flow（网页设备码授权）**
-- 流程：双击脚本 → 自动打开浏览器 → 网页输入验证码并授权 → 自动配置免密、建仓库、推送
-- 权限范围：OAuth scope `repo`（仅仓库读写），无多余权限；全程无需手动填令牌
+- 地址：**https://github.com/bainano/KUGOU-FLOW**（注意仓库名大写）
+- 本地分支 master，远程分支 main；远程 origin 已配置
+- 授权方式：**OAuth Device Flow（网页设备码授权）**，scope 仅 `repo`
 - 本地存储：git credential store（仅对 github.com 生效），一次配置永久免密
-- 自动化脚本：`tools/setup_github.py`（配套 `setup_github.bat` 双击运行）
-- 状态：**等待用户运行脚本并在网页完成授权**
-- 环境备注：沙箱代理拦截 git 协议（github.com），脚本内置 API 上传回退
+- 初始推送：301 个文件、1.38MB，已通过 GitHub REST API 全量上传
+- 备注：WorkBuddy 的 GitHub 连接器只读不写（403），不能用于推送；改用 OAuth 令牌
+- 环境备注：沙箱环境 git 协议受证书吊销检查限制，本地 git push 需在实际机器上执行；API 通道正常
 
 ## 协作规则
 
